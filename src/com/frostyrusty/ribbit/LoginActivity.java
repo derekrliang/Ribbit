@@ -17,6 +17,7 @@ public class LoginActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 		
+		// Sign Up Button (technically text..)
 		mSignUpTextView = (TextView) findViewById(R.id.signUpText);
 		mSignUpTextView.setOnClickListener(new View.OnClickListener() {
 			
