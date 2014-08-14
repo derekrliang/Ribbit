@@ -9,7 +9,7 @@
     tools:context="com.frostyrusty.ribbit.SignUpActivity" >
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/usernameField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -21,11 +21,11 @@
     </EditText>
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passwordField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/username"
-        android:layout_below="@+id/username"
+        android:layout_alignLeft="@+id/usernameField"
+        android:layout_below="@+id/usernameField"
         android:ems="10"
         android:inputType="textPassword"
         android:hint="@string/password_hint"/>
@@ -34,8 +34,8 @@
         android:id="@+id/emailField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/password"
-        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/passwordField"
+        android:layout_below="@+id/passwordField"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:hint="@string/email_hint" />

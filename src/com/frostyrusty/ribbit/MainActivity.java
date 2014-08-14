@@ -11,6 +11,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,9 +19,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.parse.ParseAnalytics;
+import com.parse.ParseUser;
 
 public class MainActivity extends ActionBarActivity implements
 		ActionBar.TabListener {
+	
+	public static final String TAG = MainActivity.class.getSimpleName();
 
 	/**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -44,13 +48,21 @@ public class MainActivity extends ActionBarActivity implements
 		// Monitors how our application is being used
 		ParseAnalytics.trackAppOpened(getIntent());
 		
-		// Launch the Login Activity
-		Intent intent = new Intent(this, LoginActivity.class);
-		// Clear the Activity stack (Login becomes the top)
-		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-		startActivity(intent);
-
+		// Get current user
+		ParseUser currentUser = ParseUser.getCurrentUser();
+		
+		if (currentUser == null) {
+			// Launch the Login Activity
+			Intent intent = new Intent(this, LoginActivity.class);
+			// Clear the Activity stack (Login becomes the top)
+			intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+			startActivity(intent);
+		}
+		else {
+			Log.i(TAG, currentUser.getUsername());
+		}
+		
 		// Set up the action bar.
 		final ActionBar actionBar = getSupportActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
