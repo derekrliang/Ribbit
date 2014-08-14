@@ -11,6 +11,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,6 +26,7 @@ public class LoginActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS); // Setup a menu loading circle
 		setContentView(R.layout.activity_login);
 		
 		// Sign Up Button (technically text..)
@@ -62,9 +64,11 @@ public class LoginActivity extends ActionBarActivity {
 				}
 				else {
 					// Login
+					setProgressBarIndeterminateVisibility(true);
 					ParseUser.logInInBackground(username, password, new LogInCallback() {
 						@Override
 						public void done(ParseUser user, ParseException e) {
+							setProgressBarIndeterminateVisibility(false);
 							if (e == null) {
 								// Success!
 								Intent intent = new Intent(LoginActivity.this, MainActivity.class);
