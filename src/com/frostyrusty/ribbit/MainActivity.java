@@ -17,6 +17,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.parse.ParseAnalytics;
+
 public class MainActivity extends ActionBarActivity implements
 		ActionBar.TabListener {
 
@@ -38,6 +40,9 @@ public class MainActivity extends ActionBarActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		// Monitors how our application is being used
+		ParseAnalytics.trackAppOpened(getIntent());
 		
 		// Launch the Login Activity
 		Intent intent = new Intent(this, LoginActivity.class);
