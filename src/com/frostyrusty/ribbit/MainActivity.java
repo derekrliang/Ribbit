@@ -53,11 +53,7 @@ public class MainActivity extends ActionBarActivity implements
 		
 		if (currentUser == null) {
 			// Launch the Login Activity
-			Intent intent = new Intent(this, LoginActivity.class);
-			// Clear the Activity stack (Login becomes the top)
-			intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-			startActivity(intent);
+			nagivateToLogin();
 		}
 		else {
 			Log.i(TAG, currentUser.getUsername());
@@ -99,6 +95,13 @@ public class MainActivity extends ActionBarActivity implements
 		}
 	}
 
+	private void nagivateToLogin() {
+		Intent intent = new Intent(this, LoginActivity.class);
+		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+		startActivity(intent);
+	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -112,7 +115,9 @@ public class MainActivity extends ActionBarActivity implements
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		if (id == R.id.action_logout) {
+			ParseUser.logOut();
+			nagivateToLogin();
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

@@ -243,6 +243,7 @@ int id action_bar_root 0x7f05001a
 int id action_bar_subtitle 0x7f050023
 int id action_bar_title 0x7f050022
 int id action_context_bar 0x7f05001d
+int id action_logout 0x7f050045
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
@@ -357,6 +358,7 @@ int string hello_world 0x7f0a0011
 int string login_button_label 0x7f0a0016
 int string login_error_message 0x7f0a001d
 int string login_error_title 0x7f0a001e
+int string menu_logout_label 0x7f0a001f
 int string password_hint 0x7f0a0015
 int string sign_up_button_label 0x7f0a001a
 int string sign_up_error_message 0x7f0a001b

@@ -1088,6 +1088,7 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
         public static final int action_context_bar=0x7f05001d;
+        public static final int action_logout=0x7f050045;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
@@ -1259,6 +1260,7 @@ containing a value of this type.
         public static final int login_button_label=0x7f0a0016;
         public static final int login_error_message=0x7f0a001d;
         public static final int login_error_title=0x7f0a001e;
+        public static final int menu_logout_label=0x7f0a001f;
         public static final int password_hint=0x7f0a0015;
         public static final int sign_up_button_label=0x7f0a001a;
         public static final int sign_up_error_message=0x7f0a001b;
