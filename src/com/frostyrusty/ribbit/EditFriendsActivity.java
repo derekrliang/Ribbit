@@ -48,7 +48,7 @@ public class EditFriendsActivity extends ListActivity {
 		mCurrentUser = ParseUser.getCurrentUser();
 		mFriendsRelation = mCurrentUser.getRelation(ParseConstants.KEY_FRIEND_RELATION);
 		
-		setProgressBarIndeterminate(true);
+		setProgressBarIndeterminateVisibility(true);
 		
 		// Find your friends
 		ParseQuery<ParseUser> query = ParseUser.getQuery();
@@ -58,7 +58,7 @@ public class EditFriendsActivity extends ListActivity {
 		query.findInBackground(new FindCallback<ParseUser>() {
 			@Override
 			public void done(List<ParseUser> users, ParseException e) {
-				setProgressBarIndeterminate(false);
+				setProgressBarIndeterminateVisibility(false);
 				if (e == null) {
 					// Success
 					mUsers = users;
@@ -128,19 +128,20 @@ public class EditFriendsActivity extends ListActivity {
 		if (getListView().isItemChecked(position)) {
 			// Add friend
 			mFriendsRelation.add(mUsers.get(position));
-			mCurrentUser.saveInBackground(new SaveCallback() {
-				@Override
-				public void done(ParseException e) {
-					if (e != null) {
-						Log.e(TAG, e.getMessage());
-					}
-				}
-			});
 		}
 		else {
 			// Remove friend
-			
+			mFriendsRelation.remove(mUsers.get(position));
 		}
+		
+		mCurrentUser.saveInBackground(new SaveCallback() {
+			@Override
+			public void done(ParseException e) {
+				if (e != null) {
+					Log.e(TAG, e.getMessage());
+				}
+			}
+		});
 	}
 	
 	// Updates the local user's view of check-marks
