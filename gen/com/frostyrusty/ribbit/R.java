@@ -1088,6 +1088,7 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
         public static final int action_context_bar=0x7f05001d;
+        public static final int action_edit_friends=0x7f050045;
         public static final int action_logout=0x7f050044;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
@@ -1200,16 +1201,19 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int activity_login=0x7f030018;
-        public static final int activity_main=0x7f030019;
-        public static final int activity_sign_up=0x7f03001a;
-        public static final int fragment_inbox=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int activity_edit_friends=0x7f030018;
+        public static final int activity_login=0x7f030019;
+        public static final int activity_main=0x7f03001a;
+        public static final int activity_sign_up=0x7f03001b;
+        public static final int fragment_friends=0x7f03001c;
+        public static final int fragment_inbox=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
-        public static final int login=0x7f0c0000;
-        public static final int main=0x7f0c0001;
-        public static final int sign_up=0x7f0c0002;
+        public static final int edit_friends=0x7f0c0000;
+        public static final int login=0x7f0c0001;
+        public static final int main=0x7f0c0002;
+        public static final int sign_up=0x7f0c0003;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1255,17 +1259,20 @@ containing a value of this type.
         public static final int action_settings=0x7f0a0011;
         public static final int app_name=0x7f0a000d;
         public static final int email_hint=0x7f0a0018;
+        public static final int empty_friends_label=0x7f0a0020;
         public static final int empty_inbox_label=0x7f0a001f;
         public static final int hello_world=0x7f0a0010;
         public static final int login_button_label=0x7f0a0015;
         public static final int login_error_message=0x7f0a001c;
         public static final int login_error_title=0x7f0a001d;
+        public static final int menu_edit_friends_label=0x7f0a0021;
         public static final int menu_logout_label=0x7f0a001e;
         public static final int password_hint=0x7f0a0014;
         public static final int sign_up_button_label=0x7f0a0019;
         public static final int sign_up_error_message=0x7f0a001a;
         public static final int sign_up_error_title=0x7f0a001b;
         public static final int sign_up_text=0x7f0a0016;
+        public static final int title_activity_edit_friends=0x7f0a0022;
         public static final int title_activity_login=0x7f0a0012;
         public static final int title_activity_sign_up=0x7f0a0017;
         public static final int title_section1=0x7f0a000e;
