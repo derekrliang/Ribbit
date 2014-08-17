@@ -1077,7 +1077,8 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
+        public static final int ic_action_camera=0x7f020057;
+        public static final int ic_launcher=0x7f020058;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1087,6 +1088,7 @@ containing a value of this type.
         public static final int action_bar_root=0x7f05001a;
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
+        public static final int action_camera=0x7f050046;
         public static final int action_context_bar=0x7f05001d;
         public static final int action_edit_friends=0x7f050045;
         public static final int action_logout=0x7f050044;
@@ -1265,6 +1267,7 @@ containing a value of this type.
         public static final int login_button_label=0x7f0a0015;
         public static final int login_error_message=0x7f0a001c;
         public static final int login_error_title=0x7f0a001d;
+        public static final int menu_camera_label=0x7f0a0024;
         public static final int menu_edit_friends_label=0x7f0a0021;
         public static final int menu_logout_label=0x7f0a001e;
         public static final int password_hint=0x7f0a0014;
