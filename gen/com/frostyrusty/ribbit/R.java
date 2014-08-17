@@ -1261,6 +1261,7 @@ containing a value of this type.
         public static final int email_hint=0x7f0a0018;
         public static final int empty_friends_label=0x7f0a0020;
         public static final int empty_inbox_label=0x7f0a001f;
+        public static final int error_title=0x7f0a0023;
         public static final int hello_world=0x7f0a0010;
         public static final int login_button_label=0x7f0a0015;
         public static final int login_error_message=0x7f0a001c;
@@ -1273,6 +1274,7 @@ containing a value of this type.
         public static final int sign_up_error_title=0x7f0a001b;
         public static final int sign_up_text=0x7f0a0016;
         public static final int title_activity_edit_friends=0x7f0a0022;
+        public static final int title_activity_edit_friends_action=0x7f0a0024;
         public static final int title_activity_login=0x7f0a0012;
         public static final int title_activity_sign_up=0x7f0a0017;
         public static final int title_section1=0x7f0a000e;
