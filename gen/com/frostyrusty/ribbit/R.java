@@ -1274,7 +1274,6 @@ containing a value of this type.
         public static final int sign_up_error_title=0x7f0a001b;
         public static final int sign_up_text=0x7f0a0016;
         public static final int title_activity_edit_friends=0x7f0a0022;
-        public static final int title_activity_edit_friends_action=0x7f0a0024;
         public static final int title_activity_login=0x7f0a0012;
         public static final int title_activity_sign_up=0x7f0a0017;
         public static final int title_section1=0x7f0a000e;
