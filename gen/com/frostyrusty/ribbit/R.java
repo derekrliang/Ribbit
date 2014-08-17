@@ -1266,7 +1266,10 @@ containing a value of this type.
         public static final int empty_friends_label=0x7f0a0020;
         public static final int empty_inbox_label=0x7f0a001f;
         public static final int error_external_storage=0x7f0a0025;
+        public static final int error_file_size_too_large=0x7f0a0029;
+        public static final int error_opening_file=0x7f0a0028;
         public static final int error_title=0x7f0a0023;
+        public static final int general_error=0x7f0a0026;
         public static final int hello_world=0x7f0a0010;
         public static final int login_button_label=0x7f0a0015;
         public static final int login_error_message=0x7f0a001c;
@@ -1285,6 +1288,7 @@ containing a value of this type.
         public static final int title_section1=0x7f0a000e;
         public static final int title_section2=0x7f0a000f;
         public static final int username_hint=0x7f0a0013;
+        public static final int video_file_size_warning=0x7f0a0027;
     }
     public static final class style {
         /** 
