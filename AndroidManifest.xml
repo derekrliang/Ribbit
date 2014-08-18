@@ -61,7 +61,7 @@
                 android:value="com.frostyrusty.ribbit.MainActivity" />
         </activity>
         <activity
-            android:name=".ViewImageActivity"
+            android:name="com.frostyrusty.ribbit.ui.ViewImageActivity"
             android:label="@string/title_activity_view_image"
             android:parentActivityName="com.frostyrusty.ribbit.ui.MainActivity"
             android:screenOrientation="portrait" >
