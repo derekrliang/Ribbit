@@ -7,9 +7,9 @@
         android:id="@+id/action_send"
         android:icon="@drawable/ic_action_send_now"
         android:orderInCategory="100"
+        android:showAsAction="always"
         android:title="@string/menu_send_label"
         android:visible="false"
-        app:showAsAction="always"
-        android:showAsAction="always"/>
+        app:showAsAction="always"/>
 
 </menu>

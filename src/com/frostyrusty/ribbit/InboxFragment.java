@@ -7,7 +7,6 @@ import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -26,7 +25,6 @@ public class InboxFragment extends ListFragment {
 				false);
 		return rootView;
 	}
-	
 	@Override
 	public void onResume() {
 		super.onResume();
@@ -40,7 +38,7 @@ public class InboxFragment extends ListFragment {
 		query.findInBackground(new FindCallback<ParseObject>() {
 			@Override
 			public void done(List<ParseObject> messages, ParseException e) {
-				getActivity().setProgressBarIndeterminate(false);
+				getActivity().setProgressBarIndeterminateVisibility(false);
 				
 				if (e == null) {
 					// we found messages for this user!
@@ -53,9 +51,11 @@ public class InboxFragment extends ListFragment {
 						++i;
 					}
 					
-					ArrayAdapter<String> adapter = new ArrayAdapter<>(getListView().getContext(),
-							android.R.layout.simple_list_item_1,
-							usernames);
+					// this only displays the sender's names in a basic list :~ just like friends list
+					//ArrayAdapter<String> adapter = new ArrayAdapter<>(getListView().getContext(), android.R.layout.simple_list_item_1, usernames);
+					//setListAdapter(adapter);
+							
+					MessageAdapter adapter = new MessageAdapter(getListView().getContext(), mMessages);
 					setListAdapter(adapter);
 				}
 			}

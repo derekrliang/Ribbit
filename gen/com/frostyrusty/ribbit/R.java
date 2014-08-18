@@ -991,6 +991,7 @@ containing a value of this type.
          (the screen is in portrait). This may be either a fraction or a dimension.
          */
         public static final int dialog_fixed_width_minor=0x7f080012;
+        public static final int message_list_item_vertical_margin=0x7f080017;
     }
     public static final class drawable {
         public static final int abc_ab_bottom_solid_dark_holo=0x7f020000;
@@ -1081,8 +1082,11 @@ containing a value of this type.
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
         public static final int ic_action_camera=0x7f020057;
-        public static final int ic_action_send_now=0x7f020058;
-        public static final int ic_launcher=0x7f020059;
+        public static final int ic_action_picture=0x7f020058;
+        public static final int ic_action_play=0x7f020059;
+        public static final int ic_action_play_over_video=0x7f02005a;
+        public static final int ic_action_send_now=0x7f02005b;
+        public static final int ic_launcher=0x7f02005c;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1092,14 +1096,14 @@ containing a value of this type.
         public static final int action_bar_root=0x7f05001a;
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
-        public static final int action_camera=0x7f050045;
+        public static final int action_camera=0x7f050047;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_edit_friends=0x7f050044;
-        public static final int action_logout=0x7f050043;
+        public static final int action_edit_friends=0x7f050046;
+        public static final int action_logout=0x7f050045;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_send=0x7f050046;
+        public static final int action_send=0x7f050048;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1122,6 +1126,7 @@ containing a value of this type.
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int loginButton=0x7f05003e;
+        public static final int messageicon=0x7f050043;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
@@ -1141,6 +1146,7 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
+        public static final int senderLabel=0x7f050044;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
@@ -1214,7 +1220,8 @@ containing a value of this type.
         public static final int activity_sign_up=0x7f03001c;
         public static final int fragment_friends=0x7f03001d;
         public static final int fragment_inbox=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int message_item=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
