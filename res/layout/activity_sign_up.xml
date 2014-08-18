@@ -24,9 +24,7 @@
 
         <EditText
             android:id="@+id/usernameField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
+            style="@style/AuthEditText"
             android:hint="@string/username_hint" >
 
             <requestFocus />
@@ -34,26 +32,20 @@
 
         <EditText
             android:id="@+id/passwordField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
+            style="@style/AuthEditText"
             android:hint="@string/password_hint"
             android:inputType="textPassword" />
 
         <EditText
             android:id="@+id/emailField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
+            style="@style/AuthEditText"
             android:hint="@string/email_hint"
             android:inputType="textEmailAddress" />
     </LinearLayout>
 
     <Button
         android:id="@+id/signupButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextLayout"
+		style="@style/AuthButton"
         android:text="@string/sign_up_button_label" />
 
 </RelativeLayout>

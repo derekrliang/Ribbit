@@ -1362,10 +1362,12 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0b0091;
+        public static final int AppBaseTheme=0x7f0b0093;
         public static final int AppTheme=0x7f0b008b;
         public static final int AuthBackground=0x7f0b008c;
         public static final int AuthBackgroundImage=0x7f0b008d;
+        public static final int AuthButton=0x7f0b0092;
+        public static final int AuthEditText=0x7f0b0091;
         public static final int AuthFieldContainer=0x7f0b0090;
         public static final int AuthTitle=0x7f0b008e;
         /**  Inheritance from above style, override items by reassigning 
