@@ -1270,6 +1270,9 @@ containing a value of this type.
         public static final int error_external_storage=0x7f0a0025;
         public static final int error_file_size_too_large=0x7f0a0029;
         public static final int error_opening_file=0x7f0a0028;
+        public static final int error_selecting_file=0x7f0a002d;
+        public static final int error_selecting_file_title=0x7f0a002e;
+        public static final int error_sending_message=0x7f0a0030;
         public static final int error_title=0x7f0a0023;
         public static final int general_error=0x7f0a0026;
         public static final int hello_world=0x7f0a0010;
@@ -1285,6 +1288,7 @@ containing a value of this type.
         public static final int sign_up_error_message=0x7f0a001a;
         public static final int sign_up_error_title=0x7f0a001b;
         public static final int sign_up_text=0x7f0a0016;
+        public static final int success_message=0x7f0a002f;
         public static final int title_activity_edit_friends=0x7f0a0022;
         public static final int title_activity_login=0x7f0a0012;
         public static final int title_activity_recipients=0x7f0a002a;
