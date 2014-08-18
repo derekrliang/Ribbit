@@ -13,8 +13,8 @@
     </item>
     <item
         android:id="@+id/action_camera"
-        android:icon="@drawable/ic_action_camera"
-        app:showAsAction="always"
+        android:icon="@drawable/ic_menu_camera"
+        android:showAsAction="always"
         android:title="@string/menu_camera_label">
     </item>
 

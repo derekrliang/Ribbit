@@ -1386,10 +1386,11 @@ containing a value of this type.
         public static final int video_file_size_warning=0x7f0a0028;
     }
     public static final class style {
-        public static final int ActionBar_Solid_Ribbit=0x7f0b008c;
-        public static final int ActionBar_Transparent_Ribbit=0x7f0b008d;
-        public static final int ActionBarTabStyle_Ribbit=0x7f0b0090;
-        public static final int ActionButton_CloseMode_Ribbit=0x7f0b0093;
+        public static final int ActionBar_Solid_Ribbit=0x7f0b008d;
+        public static final int ActionBar_Solid_Ribbit_TitleTextStyle=0x7f0b008e;
+        public static final int ActionBar_Transparent_Ribbit=0x7f0b008f;
+        public static final int ActionBarTabStyle_Ribbit=0x7f0b0092;
+        public static final int ActionButton_CloseMode_Ribbit=0x7f0b0095;
         /** 
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
@@ -1402,21 +1403,21 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0b009c;
-        public static final int AuthBackground=0x7f0b0095;
-        public static final int AuthBackgroundImage=0x7f0b0096;
-        public static final int AuthButton=0x7f0b009b;
-        public static final int AuthEditText=0x7f0b009a;
-        public static final int AuthFieldContainer=0x7f0b0099;
-        public static final int AuthTitle=0x7f0b0097;
+        public static final int AppBaseTheme=0x7f0b009e;
+        public static final int AuthBackground=0x7f0b0097;
+        public static final int AuthBackgroundImage=0x7f0b0098;
+        public static final int AuthButton=0x7f0b009d;
+        public static final int AuthEditText=0x7f0b009c;
+        public static final int AuthFieldContainer=0x7f0b009b;
+        public static final int AuthTitle=0x7f0b0099;
         /**  Inheritance from above style, override items by reassigning 
  <style name="AuthSubTitle" parent="AuthTitle"> indicates this, so does this: 
          */
-        public static final int AuthTitle_AuthSubTitle=0x7f0b0098;
-        public static final int DropDownListView_Ribbit=0x7f0b008f;
-        public static final int DropDownNav_Ribbit=0x7f0b0091;
-        public static final int PopupMenu_Ribbit=0x7f0b008e;
-        public static final int ProgressBar_Ribbit=0x7f0b0092;
+        public static final int AuthTitle_AuthSubTitle=0x7f0b009a;
+        public static final int DropDownListView_Ribbit=0x7f0b0091;
+        public static final int DropDownNav_Ribbit=0x7f0b0093;
+        public static final int PopupMenu_Ribbit=0x7f0b0090;
+        public static final int ProgressBar_Ribbit=0x7f0b0094;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;
@@ -1526,9 +1527,10 @@ containing a value of this type.
          */
         public static final int Theme_Base_Light=0x7f0b007f;
         public static final int Theme_Ribbit=0x7f0b008b;
+        public static final int Theme_Ribbit_Overflow=0x7f0b008c;
         /**  this style is only referenced in a Light.DarkActionBar based theme 
          */
-        public static final int Theme_Ribbit_Widget=0x7f0b0094;
+        public static final int Theme_Ribbit_Widget=0x7f0b0096;
         /**  Styles in here can be extended for customisation in your application. Each utilises
          one of the Base styles. If Holo themes are available on the current platform version
          they will be used instead of the compat styles. 
