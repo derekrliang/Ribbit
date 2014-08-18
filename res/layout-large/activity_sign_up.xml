@@ -16,11 +16,14 @@
 
     <TextView
         android:id="@+id/title"
-        style="@style/AuthTitle" />
+        style="@style/AuthTitle"
+        android:layout_marginTop="180dp" />
 
     <LinearLayout
         android:id="@+id/editTextLayout"
-        style="@style/AuthFieldContainer" >
+        style="@style/AuthFieldContainer"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true" >
 
         <EditText
             android:id="@+id/usernameField"
@@ -55,19 +58,21 @@
     <Button
         android:id="@+id/signupButton"
         style="@style/AuthButton"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/editTextLayout"
         android:layout_below="@+id/editTextLayout"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
         android:layout_toLeftOf="@+id/buttonDivider"
-        android:text="@string/sign_up_button_label"
-        android:layout_marginRight="0dp" />
+        android:text="@string/sign_up_button_label" />
 
     <Button
         android:id="@+id/cancelButton"
         style="@style/AuthButton"
-        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/editTextLayout"
         android:layout_below="@+id/editTextLayout"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
         android:layout_toRightOf="@+id/buttonDivider"
-        android:text="@string/cancel_button_label"
-        android:layout_marginLeft="0dp" />
+        android:text="@string/cancel_button_label" />
 
 </RelativeLayout>
