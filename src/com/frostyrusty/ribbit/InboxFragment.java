@@ -1,5 +1,6 @@
 package com.frostyrusty.ribbit;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Intent;
@@ -59,8 +60,14 @@ public class InboxFragment extends ListFragment {
 					//ArrayAdapter<String> adapter = new ArrayAdapter<>(getListView().getContext(), android.R.layout.simple_list_item_1, usernames);
 					//setListAdapter(adapter);
 							
-					MessageAdapter adapter = new MessageAdapter(getListView().getContext(), mMessages);
-					setListAdapter(adapter);
+					if (getListView().getAdapter() == null) {
+						MessageAdapter adapter = new MessageAdapter(getListView().getContext(), mMessages);
+						setListAdapter(adapter);
+					}
+					else {
+						// refill the adapter
+						((MessageAdapter) getListView().getAdapter()).refill(mMessages);
+					}
 				}
 			}
 		});
@@ -84,6 +91,28 @@ public class InboxFragment extends ListFragment {
 		}
 		else {
 			// view the video
+			// we can let the user choose how to view the video
+			Intent intent = new Intent(Intent.ACTION_VIEW, fileUri);
+			intent.setDataAndType(fileUri, "video/*");
+			startActivity(intent);
+		}
+		
+		// delete it
+		List<String> ids = message.getList(ParseConstants.KEY_RECIPIENT_IDS);
+		if (ids.size() == 1) {
+			// delete the actual file
+			message.deleteInBackground(); // trust
+		}
+		else {
+			// just remove the recipient
+			ids.remove(ParseUser.getCurrentUser().getObjectId());
+			ArrayList<String> idsToRemove = new ArrayList<String>();
+			idsToRemove.add(ParseUser.getCurrentUser().getObjectId());
+			
+			message.removeAll(ParseConstants.KEY_RECIPIENT_IDS, idsToRemove);
+			message.saveInBackground();
+			
+			// should also delete files on the database as well
 		}
 	}
 }
