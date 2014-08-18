@@ -1361,9 +1361,15 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0b008d;
+        public static final int AppBaseTheme=0x7f0b0090;
         public static final int AppTheme=0x7f0b008b;
         public static final int AuthBackground=0x7f0b008c;
+        public static final int AuthBackgroundImage=0x7f0b008d;
+        public static final int AuthTitle=0x7f0b008e;
+        /**  Inheritance from above style, override items by reassigning 
+ <style name="AuthSubTitle" parent="AuthTitle"> indicates this, so does this: 
+         */
+        public static final int AuthTitle_AuthSubTitle=0x7f0b008f;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;

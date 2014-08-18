@@ -443,9 +443,12 @@ int string title_section1 0x7f0a000e
 int string title_section2 0x7f0a000f
 int string username_hint 0x7f0a0013
 int string video_file_size_warning 0x7f0a0027
-int style AppBaseTheme 0x7f0b008d
+int style AppBaseTheme 0x7f0b0090
 int style AppTheme 0x7f0b008b
 int style AuthBackground 0x7f0b008c
+int style AuthBackgroundImage 0x7f0b008d
+int style AuthTitle 0x7f0b008e
+int style AuthTitle_AuthSubTitle 0x7f0b008f
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0063
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f0b006d
 int style TextAppearance_AppCompat_Base_SearchResult_Subtitle 0x7f0b006f
