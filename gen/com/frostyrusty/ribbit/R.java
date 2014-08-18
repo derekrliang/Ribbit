@@ -1081,12 +1081,24 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_action_camera=0x7f020057;
-        public static final int ic_action_picture=0x7f020058;
-        public static final int ic_action_play=0x7f020059;
-        public static final int ic_action_play_over_video=0x7f02005a;
-        public static final int ic_action_send_now=0x7f02005b;
-        public static final int ic_launcher=0x7f02005c;
+        public static final int avatar_empty=0x7f020057;
+        public static final int avatar_selected=0x7f020058;
+        public static final int background=0x7f020059;
+        public static final int background_fill=0x7f02005a;
+        public static final int button_divider=0x7f02005b;
+        public static final int ic_action_camera=0x7f02005c;
+        public static final int ic_action_picture=0x7f02005d;
+        public static final int ic_action_play=0x7f02005e;
+        public static final int ic_action_play_over_video=0x7f02005f;
+        public static final int ic_action_send_now=0x7f020060;
+        public static final int ic_launcher=0x7f020061;
+        public static final int ic_menu_camera=0x7f020062;
+        public static final int ic_menu_overflow=0x7f020063;
+        public static final int ic_menu_send=0x7f020064;
+        public static final int ic_picture=0x7f020065;
+        public static final int ic_tab_friends=0x7f020066;
+        public static final int ic_tab_inbox=0x7f020067;
+        public static final int ic_video=0x7f020068;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
