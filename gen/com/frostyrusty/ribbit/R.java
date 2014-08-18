@@ -1258,10 +1258,11 @@ containing a value of this type.
         public static final int activity_recipients=0x7f03001b;
         public static final int activity_sign_up=0x7f03001c;
         public static final int activity_view_image=0x7f03001d;
-        public static final int fragment_friends=0x7f03001e;
-        public static final int fragment_inbox=0x7f03001f;
-        public static final int message_item=0x7f030020;
-        public static final int support_simple_spinner_dropdown_item=0x7f030021;
+        public static final int auth_common=0x7f03001e;
+        public static final int fragment_friends=0x7f03001f;
+        public static final int fragment_inbox=0x7f030020;
+        public static final int message_item=0x7f030021;
+        public static final int support_simple_spinner_dropdown_item=0x7f030022;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
@@ -1361,10 +1362,11 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0b0090;
+        public static final int AppBaseTheme=0x7f0b0091;
         public static final int AppTheme=0x7f0b008b;
         public static final int AuthBackground=0x7f0b008c;
         public static final int AuthBackgroundImage=0x7f0b008d;
+        public static final int AuthFieldContainer=0x7f0b0090;
         public static final int AuthTitle=0x7f0b008e;
         /**  Inheritance from above style, override items by reassigning 
  <style name="AuthSubTitle" parent="AuthTitle"> indicates this, so does this: 
