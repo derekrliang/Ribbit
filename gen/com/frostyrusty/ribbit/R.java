@@ -861,7 +861,7 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f07000a;
+        public static final int abc_search_url_text_holo=0x7f07000b;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
@@ -869,6 +869,7 @@ containing a value of this type.
         public static final int background_purple=0x7f070003;
         public static final int focused_purple_button=0x7f070008;
         public static final int light_gray=0x7f070004;
+        public static final int light_purple_background=0x7f07000a;
         public static final int light_purple_button=0x7f070006;
         public static final int pressed_purple_button=0x7f070007;
         public static final int text_color=0x7f070009;
@@ -998,6 +999,8 @@ containing a value of this type.
          (the screen is in portrait). This may be either a fraction or a dimension.
          */
         public static final int dialog_fixed_width_minor=0x7f080012;
+        public static final int inbox_horizontal_margin=0x7f08001b;
+        public static final int inbox_vertical_margin=0x7f08001c;
         public static final int login_horizontal_padding=0x7f080019;
         public static final int login_vertical_margin=0x7f080018;
         public static final int login_vertical_padding=0x7f08001a;
@@ -1348,6 +1351,7 @@ containing a value of this type.
         public static final int cancel_button_label=0x7f0a0027;
         public static final int content_desc_background=0x7f0a0033;
         public static final int content_desc_button_divider=0x7f0a0035;
+        public static final int content_desc_message_icon=0x7f0a0036;
         public static final int email_hint=0x7f0a0018;
         public static final int empty_friends_label=0x7f0a0020;
         public static final int empty_inbox_label=0x7f0a001f;
@@ -1386,11 +1390,11 @@ containing a value of this type.
         public static final int video_file_size_warning=0x7f0a0028;
     }
     public static final class style {
-        public static final int ActionBar_Solid_Ribbit=0x7f0b008d;
-        public static final int ActionBar_Solid_Ribbit_TitleTextStyle=0x7f0b008e;
-        public static final int ActionBar_Transparent_Ribbit=0x7f0b008f;
-        public static final int ActionBarTabStyle_Ribbit=0x7f0b0092;
-        public static final int ActionButton_CloseMode_Ribbit=0x7f0b0095;
+        public static final int ActionBar_Solid_Ribbit=0x7f0b008e;
+        public static final int ActionBar_Solid_Ribbit_TitleTextStyle=0x7f0b008f;
+        public static final int ActionBar_Transparent_Ribbit=0x7f0b0090;
+        public static final int ActionBarTabStyle_Ribbit=0x7f0b0093;
+        public static final int ActionButton_CloseMode_Ribbit=0x7f0b0096;
         /** 
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
@@ -1403,21 +1407,21 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0b009e;
-        public static final int AuthBackground=0x7f0b0097;
-        public static final int AuthBackgroundImage=0x7f0b0098;
-        public static final int AuthButton=0x7f0b009d;
-        public static final int AuthEditText=0x7f0b009c;
-        public static final int AuthFieldContainer=0x7f0b009b;
-        public static final int AuthTitle=0x7f0b0099;
+        public static final int AppBaseTheme=0x7f0b009f;
+        public static final int AuthBackground=0x7f0b0098;
+        public static final int AuthBackgroundImage=0x7f0b0099;
+        public static final int AuthButton=0x7f0b009e;
+        public static final int AuthEditText=0x7f0b009d;
+        public static final int AuthFieldContainer=0x7f0b009c;
+        public static final int AuthTitle=0x7f0b009a;
         /**  Inheritance from above style, override items by reassigning 
  <style name="AuthSubTitle" parent="AuthTitle"> indicates this, so does this: 
          */
-        public static final int AuthTitle_AuthSubTitle=0x7f0b009a;
-        public static final int DropDownListView_Ribbit=0x7f0b0091;
-        public static final int DropDownNav_Ribbit=0x7f0b0093;
-        public static final int PopupMenu_Ribbit=0x7f0b0090;
-        public static final int ProgressBar_Ribbit=0x7f0b0094;
+        public static final int AuthTitle_AuthSubTitle=0x7f0b009b;
+        public static final int DropDownListView_Ribbit=0x7f0b0092;
+        public static final int DropDownNav_Ribbit=0x7f0b0094;
+        public static final int PopupMenu_Ribbit=0x7f0b0091;
+        public static final int ProgressBar_Ribbit=0x7f0b0095;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;
@@ -1527,10 +1531,11 @@ containing a value of this type.
          */
         public static final int Theme_Base_Light=0x7f0b007f;
         public static final int Theme_Ribbit=0x7f0b008b;
-        public static final int Theme_Ribbit_Overflow=0x7f0b008c;
+        public static final int Theme_Ribbit_LightPurpleBackground=0x7f0b008c;
+        public static final int Theme_Ribbit_Overflow=0x7f0b008d;
         /**  this style is only referenced in a Light.DarkActionBar based theme 
          */
-        public static final int Theme_Ribbit_Widget=0x7f0b0096;
+        public static final int Theme_Ribbit_Widget=0x7f0b0097;
         /**  Styles in here can be extended for customisation in your application. Each utilises
          one of the Base styles. If Holo themes are available on the current platform version
          they will be used instead of the compat styles. 

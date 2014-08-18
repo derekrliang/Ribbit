@@ -50,5 +50,6 @@
     <string name="content_desc_background">Ribbit Frog Background Image</string>
     <string name="subtitle">A FrostyRusty Production</string>
     <string name="content_desc_button_divider">Button divider</string>
+    <string name="content_desc_message_icon">Message icon</string>
 
 </resources>
