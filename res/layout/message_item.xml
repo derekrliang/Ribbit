@@ -28,15 +28,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/messageicon"
-            android:paddingBottom="@dimen/message_vertical_padding"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/message_vertical_padding"
             android:text="Test Name"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/senderLabel"
+            android:paddingBottom="@dimen/message_vertical_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="TextView"
+            android:textColor="@color/light_gray"
+            android:textSize="12sp" />
     </RelativeLayout>
 
 </LinearLayout>

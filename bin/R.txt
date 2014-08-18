@@ -320,14 +320,14 @@ int id action_bar_overlay_layout 0x7f05001f
 int id action_bar_root 0x7f05001a
 int id action_bar_subtitle 0x7f050023
 int id action_bar_title 0x7f050022
-int id action_camera 0x7f05004d
+int id action_camera 0x7f05004e
 int id action_context_bar 0x7f05001d
-int id action_edit_friends 0x7f05004c
-int id action_logout 0x7f05004b
+int id action_edit_friends 0x7f05004d
+int id action_logout 0x7f05004c
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_send 0x7f05004e
+int id action_send 0x7f05004f
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id backgroundImage 0x7f05003c
@@ -386,6 +386,7 @@ int id split_action_bar 0x7f05001e
 int id submit_area 0x7f050039
 int id subtitle 0x7f05003d
 int id tabMode 0x7f050002
+int id timeLabel 0x7f05004b
 int id title 0x7f05002b
 int id top_action_bar 0x7f050020
 int id up 0x7f050021
