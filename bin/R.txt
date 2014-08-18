@@ -162,6 +162,7 @@ int dimen login_horizontal_padding 0x7f080019
 int dimen login_vertical_margin 0x7f080018
 int dimen login_vertical_padding 0x7f08001a
 int dimen message_list_item_vertical_margin 0x7f080017
+int dimen message_vertical_padding 0x7f08001d
 int drawable ab_background_textured_ribbit 0x7f020000
 int drawable ab_bottom_solid_ribbit 0x7f020001
 int drawable ab_solid_ribbit 0x7f020002
