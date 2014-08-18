@@ -270,6 +270,15 @@ public class MainActivity extends ActionBarActivity implements
 			// start the recipients activity, to select which friends to send to!
 			Intent recipientsIntent = new Intent(this, RecipientsActivity.class);
 			recipientsIntent.setData(mMediaUri);
+			
+			String fileType;
+			if (requestCode == PICK_PHOTO_REQUEST || requestCode == TAKE_PHOTO_REQUEST) {
+				fileType = ParseConstants.TYPE_IMAGE;
+			}
+			else {
+				fileType = ParseConstants.TYPE_VIDEO;
+			}
+			recipientsIntent.putExtra(ParseConstants.KEY_FILE_TYPE, fileType);
 			startActivity(recipientsIntent);
 		}
 		else if (resultCode != RESULT_CANCELED) {

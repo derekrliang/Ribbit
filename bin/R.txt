@@ -236,7 +236,8 @@ int drawable abc_textfield_searchview_holo_light 0x7f020054
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable ic_action_camera 0x7f020057
-int drawable ic_launcher 0x7f020058
+int drawable ic_action_send_now 0x7f020058
+int drawable ic_launcher 0x7f020059
 int id action_bar 0x7f05001c
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001b
@@ -251,7 +252,7 @@ int id action_logout 0x7f050043
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_settings 0x7f050046
+int id action_send 0x7f050046
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
@@ -374,6 +375,7 @@ int string login_error_title 0x7f0a001d
 int string menu_camera_label 0x7f0a0024
 int string menu_edit_friends_label 0x7f0a0021
 int string menu_logout_label 0x7f0a001e
+int string menu_send_label 0x7f0a002c
 int string password_hint 0x7f0a0014
 int string sign_up_button_label 0x7f0a0019
 int string sign_up_error_message 0x7f0a001a
