@@ -325,14 +325,14 @@ int id action_bar_overlay_layout 0x7f05001f
 int id action_bar_root 0x7f05001a
 int id action_bar_subtitle 0x7f050023
 int id action_bar_title 0x7f050022
-int id action_camera 0x7f050051
+int id action_camera 0x7f050052
 int id action_context_bar 0x7f05001d
-int id action_edit_friends 0x7f050050
-int id action_logout 0x7f05004f
+int id action_edit_friends 0x7f050051
+int id action_logout 0x7f050050
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_send 0x7f050052
+int id action_send 0x7f050053
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id backgroundImage 0x7f05003c
@@ -363,7 +363,7 @@ int id list_item 0x7f050029
 int id loginButton 0x7f050041
 int id messageicon 0x7f05004b
 int id middle 0x7f050012
-int id nameLabel 0x7f05004e
+int id nameLabel 0x7f05004f
 int id never 0x7f050009
 int id none 0x7f050010
 int id normal 0x7f050000
@@ -399,6 +399,7 @@ int id title 0x7f05002b
 int id top_action_bar 0x7f050020
 int id up 0x7f050021
 int id useLogo 0x7f050003
+int id userImageView 0x7f05004e
 int id usernameField 0x7f05003f
 int id withText 0x7f05000c
 int integer abc_max_action_buttons 0x7f090000
@@ -459,6 +460,7 @@ int string cancel_button_label 0x7f0a0027
 int string content_desc_background 0x7f0a0033
 int string content_desc_button_divider 0x7f0a0035
 int string content_desc_message_icon 0x7f0a0036
+int string content_desc_user_avatar 0x7f0a0037
 int string email_hint 0x7f0a0018
 int string empty_friends_label 0x7f0a0020
 int string empty_inbox_label 0x7f0a001f

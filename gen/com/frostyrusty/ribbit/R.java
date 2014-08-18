@@ -1172,14 +1172,14 @@ containing a value of this type.
         public static final int action_bar_root=0x7f05001a;
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
-        public static final int action_camera=0x7f050051;
+        public static final int action_camera=0x7f050052;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_edit_friends=0x7f050050;
-        public static final int action_logout=0x7f05004f;
+        public static final int action_edit_friends=0x7f050051;
+        public static final int action_logout=0x7f050050;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_send=0x7f050052;
+        public static final int action_send=0x7f050053;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int backgroundImage=0x7f05003c;
@@ -1210,7 +1210,7 @@ containing a value of this type.
         public static final int loginButton=0x7f050041;
         public static final int messageicon=0x7f05004b;
         public static final int middle=0x7f050012;
-        public static final int nameLabel=0x7f05004e;
+        public static final int nameLabel=0x7f05004f;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
@@ -1246,6 +1246,7 @@ containing a value of this type.
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
+        public static final int userImageView=0x7f05004e;
         public static final int usernameField=0x7f05003f;
         public static final int withText=0x7f05000c;
     }
@@ -1363,6 +1364,7 @@ containing a value of this type.
         public static final int content_desc_background=0x7f0a0033;
         public static final int content_desc_button_divider=0x7f0a0035;
         public static final int content_desc_message_icon=0x7f0a0036;
+        public static final int content_desc_user_avatar=0x7f0a0037;
         public static final int email_hint=0x7f0a0018;
         public static final int empty_friends_label=0x7f0a0020;
         public static final int empty_inbox_label=0x7f0a001f;
