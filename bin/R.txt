@@ -121,7 +121,7 @@ int bool abc_config_actionMenuItemAllCaps 0x7f060005
 int bool abc_config_allowActionMenuItemTextWithIcon 0x7f060004
 int bool abc_config_showMenuShortcutsWhenKeyboardPresent 0x7f060003
 int bool abc_split_action_bar_is_narrow 0x7f060002
-int color abc_search_url_text_holo 0x7f07000b
+int color abc_search_url_text_holo 0x7f07000f
 int color abc_search_url_text_normal 0x7f070000
 int color abc_search_url_text_pressed 0x7f070002
 int color abc_search_url_text_selected 0x7f070001
@@ -132,6 +132,10 @@ int color light_gray 0x7f070004
 int color light_purple_background 0x7f07000a
 int color light_purple_button 0x7f070006
 int color pressed_purple_button 0x7f070007
+int color swipeRefresh1 0x7f07000b
+int color swipeRefresh2 0x7f07000c
+int color swipeRefresh3 0x7f07000d
+int color swipeRefresh4 0x7f07000e
 int color text_color 0x7f070009
 int dimen abc_action_bar_default_height 0x7f080002
 int dimen abc_action_bar_icon_vertical_padding 0x7f080003
@@ -320,14 +324,14 @@ int id action_bar_overlay_layout 0x7f05001f
 int id action_bar_root 0x7f05001a
 int id action_bar_subtitle 0x7f050023
 int id action_bar_title 0x7f050022
-int id action_camera 0x7f05004e
+int id action_camera 0x7f05004f
 int id action_context_bar 0x7f05001d
-int id action_edit_friends 0x7f05004d
-int id action_logout 0x7f05004c
+int id action_edit_friends 0x7f05004e
+int id action_logout 0x7f05004d
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_send 0x7f05004f
+int id action_send 0x7f050050
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id backgroundImage 0x7f05003c
@@ -355,7 +359,7 @@ int id imageView 0x7f050048
 int id listMode 0x7f050001
 int id list_item 0x7f050029
 int id loginButton 0x7f050041
-int id messageicon 0x7f050049
+int id messageicon 0x7f05004a
 int id middle 0x7f050012
 int id never 0x7f050009
 int id none 0x7f050010
@@ -375,7 +379,7 @@ int id search_mag_icon 0x7f050035
 int id search_plate 0x7f050036
 int id search_src_text 0x7f050037
 int id search_voice_btn 0x7f05003b
-int id senderLabel 0x7f05004a
+int id senderLabel 0x7f05004b
 int id shortcut 0x7f05002e
 int id showCustom 0x7f050007
 int id showHome 0x7f050004
@@ -385,8 +389,9 @@ int id signupButton 0x7f050046
 int id split_action_bar 0x7f05001e
 int id submit_area 0x7f050039
 int id subtitle 0x7f05003d
+int id swipeRefreshLayout 0x7f050049
 int id tabMode 0x7f050002
-int id timeLabel 0x7f05004b
+int id timeLabel 0x7f05004c
 int id title 0x7f05002b
 int id top_action_bar 0x7f050020
 int id up 0x7f050021

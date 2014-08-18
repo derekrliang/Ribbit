@@ -7,13 +7,15 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.frostyrusty.ribbit.R;
-import com.frostyrusty.ribbit.R.layout;
 import com.frostyrusty.ribbit.adapters.MessageAdapter;
 import com.frostyrusty.ribbit.utils.ParseConstants;
 import com.parse.FindCallback;
@@ -26,12 +28,21 @@ import com.parse.ParseUser;
 public class InboxFragment extends ListFragment {
 	
 	protected List<ParseObject> mMessages;
+	protected SwipeRefreshLayout mSwipeRefreshLayout;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_inbox, container,
 				false);
+		
+		mSwipeRefreshLayout = (SwipeRefreshLayout) rootView.findViewById(R.id.swipeRefreshLayout);
+		mSwipeRefreshLayout.setOnRefreshListener(mOnRefreshListener);
+		mSwipeRefreshLayout.setColorScheme(R.color.swipeRefresh1,
+				R.color.swipeRefresh2,
+				R.color.swipeRefresh3,
+				R.color.swipeRefresh4);
+		
 		return rootView;
 	}
 	@Override
@@ -40,6 +51,9 @@ public class InboxFragment extends ListFragment {
 		
 		getActivity().setProgressBarIndeterminateVisibility(true);
 		
+		retrieveMessages();
+	}
+	private void retrieveMessages() {
 		// ask parse if we have any new messages!! that are only sent to our obj id
 		ParseQuery<ParseObject> query = new ParseQuery<ParseObject>(ParseConstants.CLASS_MESSAGES);
 		query.whereEqualTo(ParseConstants.KEY_RECIPIENT_IDS, ParseUser.getCurrentUser().getObjectId());
@@ -48,6 +62,10 @@ public class InboxFragment extends ListFragment {
 			@Override
 			public void done(List<ParseObject> messages, ParseException e) {
 				getActivity().setProgressBarIndeterminateVisibility(false);
+				
+				if (mSwipeRefreshLayout.isRefreshing()) {
+					mSwipeRefreshLayout.setRefreshing(false);
+				}
 				
 				if (e == null) {
 					// we found messages for this user!
@@ -119,4 +137,14 @@ public class InboxFragment extends ListFragment {
 			// should also delete files on the database as well
 		}
 	}
+	
+	protected OnRefreshListener mOnRefreshListener = new OnRefreshListener() {
+		
+		@Override
+		public void onRefresh() {
+			//Toast.makeText(getActivity(), "We're refreshing!", Toast.LENGTH_SHORT).show();
+			retrieveMessages();
+			
+		}
+	};
 }

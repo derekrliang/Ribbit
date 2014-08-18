@@ -861,7 +861,7 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f07000b;
+        public static final int abc_search_url_text_holo=0x7f07000f;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
@@ -872,6 +872,10 @@ containing a value of this type.
         public static final int light_purple_background=0x7f07000a;
         public static final int light_purple_button=0x7f070006;
         public static final int pressed_purple_button=0x7f070007;
+        public static final int swipeRefresh1=0x7f07000b;
+        public static final int swipeRefresh2=0x7f07000c;
+        public static final int swipeRefresh3=0x7f07000d;
+        public static final int swipeRefresh4=0x7f07000e;
         public static final int text_color=0x7f070009;
     }
     public static final class dimen {
@@ -1167,14 +1171,14 @@ containing a value of this type.
         public static final int action_bar_root=0x7f05001a;
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
-        public static final int action_camera=0x7f05004e;
+        public static final int action_camera=0x7f05004f;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_edit_friends=0x7f05004d;
-        public static final int action_logout=0x7f05004c;
+        public static final int action_edit_friends=0x7f05004e;
+        public static final int action_logout=0x7f05004d;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_send=0x7f05004f;
+        public static final int action_send=0x7f050050;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int backgroundImage=0x7f05003c;
@@ -1202,7 +1206,7 @@ containing a value of this type.
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int loginButton=0x7f050041;
-        public static final int messageicon=0x7f050049;
+        public static final int messageicon=0x7f05004a;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
@@ -1222,7 +1226,7 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
-        public static final int senderLabel=0x7f05004a;
+        public static final int senderLabel=0x7f05004b;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
@@ -1232,8 +1236,9 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int subtitle=0x7f05003d;
+        public static final int swipeRefreshLayout=0x7f050049;
         public static final int tabMode=0x7f050002;
-        public static final int timeLabel=0x7f05004b;
+        public static final int timeLabel=0x7f05004c;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
