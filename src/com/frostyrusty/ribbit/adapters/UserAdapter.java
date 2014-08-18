@@ -1,10 +1,9 @@
 package com.frostyrusty.ribbit.adapters;
 
-import java.util.Date;
 import java.util.List;
 
 import android.content.Context;
-import android.text.format.DateUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,12 +12,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.frostyrusty.ribbit.R;
-import com.frostyrusty.ribbit.utils.ParseConstants;
-import com.parse.ParseObject;
+import com.frostyrusty.ribbit.utils.MD5Util;
 import com.parse.ParseUser;
+import com.squareup.picasso.Picasso;
 
 public class UserAdapter extends ArrayAdapter<ParseUser> {
-	
 	protected Context mContext;
 	protected List<ParseUser> mUsers;
 	
@@ -36,7 +34,7 @@ public class UserAdapter extends ArrayAdapter<ParseUser> {
 		if (convertView == null) {
 			convertView = LayoutInflater.from(mContext).inflate(R.layout.user_item, null);
 			holder = new ViewHolder();
-			//holder.iconImageView = (ImageView) convertView.findViewById(R.id.messageicon);
+			holder.userImageView = (ImageView) convertView.findViewById(R.id.userImageView);
 			holder.nameLabel = (TextView) convertView.findViewById(R.id.nameLabel);
 			convertView.setTag(holder);
 		}
@@ -45,20 +43,28 @@ public class UserAdapter extends ArrayAdapter<ParseUser> {
 		}
 		
 		ParseUser user = mUsers.get(position);
+		String email = user.getEmail().toLowerCase();
 		
-//		if (user.getString(ParseConstants.KEY_FILE_TYPE).equals(ParseConstants.TYPE_IMAGE)) {
-//			holder.iconImageView.setImageResource(R.drawable.ic_picture);
-//		}
-//		else {
-//			holder.iconImageView.setImageResource(R.drawable.ic_video);
-//		}
+		if (email.equals("")) {
+			// use default profile image
+			holder.userImageView.setImageResource(R.drawable.avatar_empty);
+		}
+		else {
+			String hash = MD5Util.md5Hex(email);
+			String gravatarUrl = "http://www.gravatar.com/avatar/" + hash + "?s=204&d=404";
+			Picasso.with(mContext)
+				.load(gravatarUrl)
+				.placeholder(R.drawable.avatar_empty) // if case we get a 404, no gravatar availabe for this email
+				.into(holder.userImageView);
+		}
+		
 		holder.nameLabel.setText(user.getUsername());
 		
 		return convertView;
 	}
 	
 	private static class ViewHolder {
-		//ImageView iconImageView;
+		ImageView userImageView;
 		TextView nameLabel;
 	}
 	
