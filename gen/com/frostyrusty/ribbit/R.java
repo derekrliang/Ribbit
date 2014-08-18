@@ -861,11 +861,12 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070004;
+        public static final int abc_search_url_text_holo=0x7f070005;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
         public static final int background_purple=0x7f070003;
+        public static final int light_gray=0x7f070004;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -992,6 +993,9 @@ containing a value of this type.
          (the screen is in portrait). This may be either a fraction or a dimension.
          */
         public static final int dialog_fixed_width_minor=0x7f080012;
+        public static final int login_horizontal_padding=0x7f080019;
+        public static final int login_vertical_margin=0x7f080018;
+        public static final int login_vertical_padding=0x7f08001a;
         public static final int message_list_item_vertical_margin=0x7f080017;
     }
     public static final class drawable {
@@ -1109,14 +1113,14 @@ containing a value of this type.
         public static final int action_bar_root=0x7f05001a;
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
-        public static final int action_camera=0x7f050049;
+        public static final int action_camera=0x7f05004b;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_edit_friends=0x7f050048;
-        public static final int action_logout=0x7f050047;
+        public static final int action_edit_friends=0x7f05004a;
+        public static final int action_logout=0x7f050049;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_send=0x7f05004a;
+        public static final int action_send=0x7f05004c;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int backgroundImage=0x7f05003c;
@@ -1127,8 +1131,9 @@ containing a value of this type.
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
         public static final int dropdown=0x7f05000f;
+        public static final int editTextLayout=0x7f05003e;
         public static final int edit_query=0x7f050030;
-        public static final int emailField=0x7f050042;
+        public static final int emailField=0x7f050044;
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
@@ -1137,17 +1142,17 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageView=0x7f050044;
+        public static final int imageView=0x7f050046;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
-        public static final int loginButton=0x7f05003f;
-        public static final int messageicon=0x7f050045;
+        public static final int loginButton=0x7f050041;
+        public static final int messageicon=0x7f050047;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
-        public static final int pager=0x7f050041;
-        public static final int passwordField=0x7f05003e;
+        public static final int pager=0x7f050043;
+        public static final int passwordField=0x7f050040;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
@@ -1161,21 +1166,22 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
-        public static final int senderLabel=0x7f050046;
+        public static final int senderLabel=0x7f050048;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
         public static final int showTitle=0x7f050006;
-        public static final int signUpText=0x7f050040;
-        public static final int signupButton=0x7f050043;
+        public static final int signUpText=0x7f050042;
+        public static final int signupButton=0x7f050045;
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
+        public static final int subtitle=0x7f05003d;
         public static final int tabMode=0x7f050002;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
-        public static final int usernameField=0x7f05003d;
+        public static final int usernameField=0x7f05003f;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {
@@ -1312,6 +1318,7 @@ containing a value of this type.
         public static final int sign_up_error_message=0x7f0a001a;
         public static final int sign_up_error_title=0x7f0a001b;
         public static final int sign_up_text=0x7f0a0016;
+        public static final int subtitle=0x7f0a0033;
         public static final int success_message=0x7f0a002f;
         public static final int title_activity_edit_friends=0x7f0a0022;
         public static final int title_activity_login=0x7f0a0012;
