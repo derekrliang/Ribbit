@@ -443,9 +443,9 @@ int string title_section1 0x7f0a000e
 int string title_section2 0x7f0a000f
 int string username_hint 0x7f0a0013
 int string video_file_size_warning 0x7f0a0027
-int style AppBaseTheme 0x7f0b008e
+int style AppBaseTheme 0x7f0b008d
 int style AppTheme 0x7f0b008b
-int style ImageButtonAppTheme 0x7f0b008d
+int style AuthBackground 0x7f0b008c
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0063
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f0b006d
 int style TextAppearance_AppCompat_Base_SearchResult_Subtitle 0x7f0b006f
@@ -585,7 +585,6 @@ int style Widget_AppCompat_PopupMenu 0x7f0b002b
 int style Widget_AppCompat_ProgressBar 0x7f0b000a
 int style Widget_AppCompat_ProgressBar_Horizontal 0x7f0b0009
 int style Widget_AppCompat_Spinner_DropDown_ActionBar 0x7f0b0022
-int style _AppTheme 0x7f0b008c
 int[] styleable ActionBar { 0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032, 0x7f010033, 0x7f010034, 0x7f010035, 0x7f010036, 0x7f010037 }
 int styleable ActionBar_background 10
 int styleable ActionBar_backgroundSplit 12

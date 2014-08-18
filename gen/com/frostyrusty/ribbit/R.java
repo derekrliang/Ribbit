@@ -1361,9 +1361,9 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0b008e;
+        public static final int AppBaseTheme=0x7f0b008d;
         public static final int AppTheme=0x7f0b008b;
-        public static final int ImageButtonAppTheme=0x7f0b008d;
+        public static final int AuthBackground=0x7f0b008c;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;
@@ -1566,7 +1566,6 @@ containing a value of this type.
         public static final int Widget_AppCompat_ProgressBar=0x7f0b000a;
         public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0b0009;
         public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b0022;
-        public static final int _AppTheme=0x7f0b008c;
     }
     public static final class styleable {
         /**  ============================================ 
