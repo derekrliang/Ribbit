@@ -3,7 +3,6 @@ package com.frostyrusty.ribbit;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.net.Uri;
@@ -127,7 +126,6 @@ public class RecipientsActivity extends ListActivity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	@SuppressLint("NewApi")
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);

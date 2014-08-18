@@ -2,13 +2,11 @@ package com.frostyrusty.ribbit;
 
 import java.util.List;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -92,7 +90,6 @@ public class EditFriendsActivity extends ListActivity {
 	/**
 	 * Set up the {@link android.app.ActionBar}.
 	 */
-	@SuppressLint("NewApi")
 	private void setupActionBar() {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
