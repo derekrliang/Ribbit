@@ -55,7 +55,7 @@ public class MessageAdapter extends ArrayAdapter<ParseObject> {
 		holder.timeLabel.setText(convertedDate);
 		
 		if (message.getString(ParseConstants.KEY_FILE_TYPE).equals(ParseConstants.TYPE_IMAGE)) {
-			holder.iconImageView.setImageResource(R.drawable.ic_action_picture);
+			holder.iconImageView.setImageResource(R.drawable.ic_picture);
 		}
 		else {
 			holder.iconImageView.setImageResource(R.drawable.ic_video);
