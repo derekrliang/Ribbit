@@ -3,14 +3,14 @@ package com.frostyrusty.ribbit;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
-public class ViewImageActivity extends ActionBarActivity {
+public class ViewImageActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
