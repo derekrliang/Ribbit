@@ -92,6 +92,7 @@ public class MainActivity extends ActionBarActivity implements
 			}
 		}
 
+		// http://developer.android.com/guide/topics/media/camera.html
 		private Uri getOutputMediaFileUri(int mediaType) {
 			// To be safe, you should check that the SDCard is mounted
 		    // using Environment.getExternalStorageState() before doing this.
@@ -131,7 +132,7 @@ public class MainActivity extends ActionBarActivity implements
 				
 				Log.d(TAG, "File: " + Uri.fromFile(mediaFile));
 				
-				// 5. Return the file's URI				
+				// 5. Return the file's URI
 				return Uri.fromFile(mediaFile);
 			}
 			else {
@@ -226,7 +227,6 @@ public class MainActivity extends ActionBarActivity implements
 		super.onActivityResult(requestCode, resultCode, data);
 		
 		if (resultCode == RESULT_OK) {
-			
 			if (requestCode == PICK_PHOTO_REQUEST || requestCode == PICK_VIDEO_REQUEST) {
 				if (data == null) {
 					Toast.makeText(this, R.string.general_error, Toast.LENGTH_LONG).show();
@@ -266,6 +266,11 @@ public class MainActivity extends ActionBarActivity implements
 				mediaScanIntent.setData(mMediaUri);
 				sendBroadcast(mediaScanIntent);
 			}
+			
+			// start the recipients activity, to select which friends to send to!
+			Intent recipientsIntent = new Intent(this, RecipientsActivity.class);
+			recipientsIntent.setData(mMediaUri);
+			startActivity(recipientsIntent);
 		}
 		else if (resultCode != RESULT_CANCELED) {
 			Toast.makeText(this, R.string.general_error, Toast.LENGTH_LONG).show();

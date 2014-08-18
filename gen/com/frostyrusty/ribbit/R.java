@@ -1091,14 +1091,14 @@ containing a value of this type.
         public static final int action_bar_root=0x7f05001a;
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
-        public static final int action_camera=0x7f050046;
+        public static final int action_camera=0x7f050045;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_edit_friends=0x7f050045;
-        public static final int action_logout=0x7f050044;
+        public static final int action_edit_friends=0x7f050044;
+        public static final int action_logout=0x7f050043;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050043;
+        public static final int action_settings=0x7f050046;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1209,15 +1209,15 @@ containing a value of this type.
         public static final int activity_edit_friends=0x7f030018;
         public static final int activity_login=0x7f030019;
         public static final int activity_main=0x7f03001a;
-        public static final int activity_sign_up=0x7f03001b;
-        public static final int fragment_friends=0x7f03001c;
-        public static final int fragment_inbox=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
+        public static final int activity_recipients=0x7f03001b;
+        public static final int activity_sign_up=0x7f03001c;
+        public static final int fragment_friends=0x7f03001d;
+        public static final int fragment_inbox=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
     public static final class menu {
-        public static final int login=0x7f0d0000;
-        public static final int main=0x7f0d0001;
-        public static final int sign_up=0x7f0d0002;
+        public static final int main=0x7f0d0000;
+        public static final int recipients=0x7f0d0001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1265,6 +1265,7 @@ containing a value of this type.
         public static final int email_hint=0x7f0a0018;
         public static final int empty_friends_label=0x7f0a0020;
         public static final int empty_inbox_label=0x7f0a001f;
+        public static final int empty_recipients_list_message=0x7f0a002b;
         public static final int error_external_storage=0x7f0a0025;
         public static final int error_file_size_too_large=0x7f0a0029;
         public static final int error_opening_file=0x7f0a0028;
@@ -1284,6 +1285,7 @@ containing a value of this type.
         public static final int sign_up_text=0x7f0a0016;
         public static final int title_activity_edit_friends=0x7f0a0022;
         public static final int title_activity_login=0x7f0a0012;
+        public static final int title_activity_recipients=0x7f0a002a;
         public static final int title_activity_sign_up=0x7f0a0017;
         public static final int title_section1=0x7f0a000e;
         public static final int title_section2=0x7f0a000f;
