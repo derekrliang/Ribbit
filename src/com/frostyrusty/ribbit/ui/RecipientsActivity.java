@@ -17,6 +17,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.frostyrusty.ribbit.R;
@@ -52,6 +53,9 @@ public class RecipientsActivity extends Activity {
 		mGridView = (GridView) findViewById(R.id.friendsGrid);
 		mGridView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 		mGridView.setOnItemClickListener(mOnItemClickListener);
+		
+		TextView emptyTextView = (TextView) findViewById(android.R.id.empty);
+		mGridView.setEmptyView(emptyTextView);
 		
 		mMediaUri = getIntent().getData();
 		mFileType = getIntent().getExtras().getString(ParseConstants.KEY_FILE_TYPE);
