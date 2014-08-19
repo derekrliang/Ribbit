@@ -1386,6 +1386,7 @@ containing a value of this type.
         public static final int menu_logout_label=0x7f0a001e;
         public static final int menu_send_label=0x7f0a002d;
         public static final int password_hint=0x7f0a0014;
+        public static final int push_message=0x7f0a0039;
         public static final int sign_up_button_label=0x7f0a0019;
         public static final int sign_up_error_message=0x7f0a001a;
         public static final int sign_up_error_title=0x7f0a001b;

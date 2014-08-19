@@ -482,6 +482,7 @@ int string menu_edit_friends_label 0x7f0a0021
 int string menu_logout_label 0x7f0a001e
 int string menu_send_label 0x7f0a002d
 int string password_hint 0x7f0a0014
+int string push_message 0x7f0a0039
 int string sign_up_button_label 0x7f0a0019
 int string sign_up_error_message 0x7f0a001a
 int string sign_up_error_title 0x7f0a001b

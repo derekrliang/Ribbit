@@ -3,8 +3,10 @@ package com.frostyrusty.ribbit;
 import android.app.Application;
 
 import com.frostyrusty.ribbit.ui.MainActivity;
+import com.frostyrusty.ribbit.utils.ParseConstants;
 import com.parse.Parse;
 import com.parse.ParseInstallation;
+import com.parse.ParseUser;
 import com.parse.PushService;
 
 public class RibbitApplication extends Application {
@@ -18,5 +20,11 @@ public class RibbitApplication extends Application {
 		
 		PushService.setDefaultPushCallback(this, MainActivity.class);
 		ParseInstallation.getCurrentInstallation().saveInBackground();
+	}
+	
+	public static void updateParseInstallation(ParseUser user) {
+		ParseInstallation installation = ParseInstallation.getCurrentInstallation();
+		installation.put(ParseConstants.KEY_USER_ID, user.getObjectId());
+		installation.saveInBackground();
 	}
 }
