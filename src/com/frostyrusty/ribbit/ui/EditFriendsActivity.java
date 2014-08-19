@@ -49,7 +49,6 @@ public class EditFriendsActivity extends Activity {
 		
 		TextView emptyTextView = (TextView) findViewById(android.R.id.empty);
 		mGridView.setEmptyView(emptyTextView);
-		
 	}
 	
 	@Override
